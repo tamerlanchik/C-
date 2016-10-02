@@ -1,0 +1,6 @@
+//time
+#include <chrono>
+auto begin = chrono::high_resolution_clock::now();
+/*--any work--*/
+auto end = chrono::high_resolution_clock::now();
+cout <<chrono::duration_cast<chrono::microseconds>(end-begin).count()<< endl;
