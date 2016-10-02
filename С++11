@@ -10,3 +10,6 @@ high_resolution_clock - class
 high_reso;ution_clock::now() - some time in <nanoseconds>
 duration_cast  -  converter between chrono's internal data types (hours, minutes. seconds, milliseconds, microseconds, nanoseconds)
 a.count() - returns count of units.
+
+http://www.cplusplus.com/reference/chrono/?kw=chrono
+*/
