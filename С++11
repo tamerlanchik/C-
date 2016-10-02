@@ -1,6 +1,12 @@
 //time
 #include <chrono>
-auto begin = chrono::high_resolution_clock::now();
+auto begin = std::chrono::high_resolution_clock::now();
 /*--any work--*/
-auto end = chrono::high_resolution_clock::now();
-cout <<chrono::duration_cast<chrono::microseconds>(end-begin).count()<< endl;
+auto end = std::chrono::high_resolution_clock::now();
+cout <<std::chrono::duration_cast<std::chrono::microseconds>(end-begin).count()<< endl;
+/*
+std::chrono    - namespace
+high_resolution_clock - class
+high_reso;ution_clock::now() - some time in <nanoseconds>
+duration_cast  -  converter between chrono's internal data types (hours, minutes. seconds, milliseconds, microseconds, nanoseconds)
+a.count() - returns count of units.
